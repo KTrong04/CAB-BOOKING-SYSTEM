@@ -32,3 +32,36 @@ cab-booking-system/
 ├── scripts/                     # Các script tự động hóa khởi tạo môi trường và dữ liệu mẫu
 └── README.md                    # Tài liệu hướng dẫn chi tiết dự án
 ````
+
+## 🛠 QUY TRÌNH LÀM VIỆC NHÓM (GIT WORKFLOW)
+Để đảm bảo điểm số (theo quy định KHÔNG FORK từ giảng viên) và tính ổn định của dự án, cả nhóm tuân thủ quy trình sau:
+
+1. Nguyên tắc vàng
+Không Fork: Chỉ sử dụng git clone từ Repository gốc.
+
+Không Push trực tiếp vào main: Nhánh main đã được khóa bằng Ruleset.
+
+Mọi thay đổi phải qua Pull Request (PR): Cần ít nhất 1 người duyệt (Approval) mới có thể Merge.
+
+2. Các bước thực hiện (Dành cho Dev)
+Khi làm tính năng mới, hãy mở Terminal tại thư mục dự án và chạy:
+
+Cập nhật code mới nhất:
+
+````markdown
+git checkout main
+git pull origin main
+````
+
+Tạo nhánh mới: (Ví dụ: feat/user-service, feat/auth-ui...)
+
+````markdown
+git checkout -b feat/ten-chuc-nang
+Lưu thay đổi và Push:
+````
+
+````markdown
+git add .
+git commit -m "Mô tả ngắn gọn việc đã làm"
+git push origin feat/ten-chuc-nang
+````
